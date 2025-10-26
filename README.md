@@ -32,10 +32,11 @@ Run the script:
 >python src/run_analysis.py
 
  Project StructurePathDescriptionair-pollution-project/Root Directory
-├─ data/Stores the processed dataset (air_resp_data.csv).
-├─ plots/Stores all generated plots (coefficients.png, corr_matrix.png, etc.).
-├─ src/Contains the single runnable Python script (run_analysis.py).
-└─ notebooks/Contains the step-by-step interactive analysis (Untitled.ipynb).
+ 
+/├─ data/Stores the processed dataset (air_resp_data.csv).
+/├─ plots/Stores all generated plots (coefficients.png, corr_matrix.png, etc.).
+/├─ src/Contains the single runnable Python script (run_analysis.py).
+/└─ notebooks/Contains the step-by-step interactive analysis (Untitled.ipynb).
 
  Key ResultsThe Linear Regression model provided the following insights from the analysis:Model Performance: $\text{R}^2$ Score of $\approx 0.74$ (High predictive power on the synthetic data).Most Impactful Features (Positive Correlation): $\text{NO}_2$ and $\text{PM}2.5$ showed the highest positive coefficients, indicating they are the strongest predictors for an increase in respiratory cases.Mitigating Factors: $\text{O}_3$ and Humidity showed slight negative coefficients.
  
