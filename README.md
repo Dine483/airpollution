@@ -27,7 +27,8 @@ Open Anaconda Prompt (Windows) or Terminal (macOS/Linux).
 jupyter lab
 Run: A browser will open. Navigate to notebooks/Untitled.ipynb and run all cells sequentially.Option B: Python Script (For Reproducible Runs)The Python script (run_analysis.py) runs the entire pipeline from start to finish, saving all outputs to files.
 Place the File: Put the file run_analysis.py into the src/ directory.
-Run the script:>Bashconda activate airproj
+Run the script:
+>Bashconda activate airproj
 >python src/run_analysis.py
 
  Project StructurePathDescriptionair-pollution-project/Root Directory
@@ -35,5 +36,8 @@ Run the script:>Bashconda activate airproj
 ├─ plots/Stores all generated plots (coefficients.png, corr_matrix.png, etc.).
 ├─ src/Contains the single runnable Python script (run_analysis.py).
 └─ notebooks/Contains the step-by-step interactive analysis (Untitled.ipynb).
+
  Key ResultsThe Linear Regression model provided the following insights from the analysis:Model Performance: $\text{R}^2$ Score of $\approx 0.74$ (High predictive power on the synthetic data).Most Impactful Features (Positive Correlation): $\text{NO}_2$ and $\text{PM}2.5$ showed the highest positive coefficients, indicating they are the strongest predictors for an increase in respiratory cases.Mitigating Factors: $\text{O}_3$ and Humidity showed slight negative coefficients.
- Future EnhancementsFor a transition to a real-world project, consider these improvements:Use Real Data: Replace the synthetic data with actual time-series air quality data (e.g., OpenAQ, CPCB) and hospital admissions/mortality data.Advanced Modeling: Use Poisson Regression (appropriate for count data like hospital visits) and integrate lagged features to capture the delayed effect of pollution.Confounder Control: Include temporal confounders like day-of-week, season, or viral activity (e.g., flu season).
+ 
+ Future EnhancementsFor a transition to a real-world project, consider these improvements:Use Real Data: Replace the synthetic data with actual time-series air quality data (e.g., OpenAQ, CPCB) and hospital admissions/mortality data.Advanced Modeling: Use Poisson Regression (appropriate for count data like hospital visits) and integrate lagged features to capture the delayed effect of pollution.
+ Confounder Control: Include temporal confounders like day-of-week, season, or viral activity (e.g., flu season).
